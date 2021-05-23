@@ -42,16 +42,26 @@ function cartController() {
             return res.json({ totalQty: req.session.cart.totalQty })
         },
 
-        // increase(req,res) {
-        //     let cart = req.session.cart
-        //     if(cart.items[req.body._id].qty >= 1){
-        //         cart.items[req.body._id].qty = cart.items[req.body._id].qty + 1
-        //         req.body.price = req.body.price + req.body.price
-        //         // cart.totalQty = cart.totalQty + 1
-        //         cart.totalPrice = cart.totalPrice + req.body.price
+        // remove(req, res) {
+        //     let cart = req.session.cart;
+        //     if (cart.totalQty > 0) {
+        //       cart.totalQty = cart.totalQty - 1;
+        //       cart.totalPrice = cart.totalPrice - req.body.price;
+        //     //   console.log(cart.items[req.body._id].qty)
+
+        //       if (cart.items[req.body._id].qty === 1) {
+        //         delete cart.items[req.body._id];
+        //       } else {
+        //         cart.items[req.body._id].qty = cart.items[req.body._id].qty - 1;
+        //       }
+        //       if (cart.totalQty === 0) {
+        //         delete req.session.cart;
+        //       }
         //     }
-        //     return res.json({ qty: cart.items[req.body._id].qty, price: req.body.price })
-        // }
+        //     let totalQty = cart ? cart.totalQty : 0;
+        //     // console.log(cart.items)
+        //     return res.json({ totalQty: totalQty, cartItems: cart.items });
+        // },
     }
 }
 
