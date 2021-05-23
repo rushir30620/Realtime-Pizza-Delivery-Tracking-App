@@ -11,3 +11,4 @@ const userSchema = new Schema({
 const Menu = mongoose.model('User', userSchema)
 
 module.exports = Menu
+// vscode://vscode.github-authentication/did-authenticate?windowid=1&code=e52eb1396cd6e51991ab&state=ec843b31-c609-4c85-baee-24b68b5c7d35
