@@ -1,1 +1,0 @@
-	Realtime Pizza Delivery Tracking App is a well-managed web platform in which you can order pizza sitting at home or without any work. Created using NodeJS, ExpressJS, Socket.io, Taiwind CSS, HTML, SASS Framework.
